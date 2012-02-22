@@ -1,0 +1,60 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>CHAT</title>
+
+  <meta name="keywords" content="spire.io spire api rest chat realtime" />
+  <meta name="description" content="A simple chat demo using the spire.io REST API">
+  <meta name="author" content="">
+
+  <meta name="robots" content="all" />
+  <meta name="revisit-after" content="1 day" />
+  <meta name="rating" content="safe for kids" />
+
+  <!-- TODO: Move these to the bottom of the body -->
+  <script src="./javascripts/lib/jquery.js"></script>
+  <script src="./javascripts/lib/jquery.scrollto.js"></script>
+  <script src="./javascripts/lib/jquery.url.js"></script>
+  <script src="./spire.io.bundle.js"></script>
+
+  <!-- needs to be after jquery -->
+  <script id="message" type="text/html">
+
+    <div class="message {{ type }} {{#isBabe}}pink{{/isBabe}}" id="{{ cssID }}">
+      <time datetime="{{ date }}">{{ humanTime }}</time>
+
+      <span class="name">
+        {{ author }}
+      </span>
+
+      <span class="body">{{ content }}</span>
+    </div>
+  </script>
+
+  <script src="./javascripts/lib/icanhaz.js"></script>
+
+  <script src="./application.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <h1>Talk to a Hot Babe</h1>
+  <div class="messages">
+	  <div class='text'></div>
+	  <footer>
+	    <form class='message' action="#" method="post">
+	      <input disabled="true" type="text" name="content" value='Finding a babe...'/>
+	    </form>
+  </div>
+
+  </footer>
+
+</body>
+</html>

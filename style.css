@@ -1,0 +1,27 @@
+body {
+  background-image: url('./images/background.jpg');
+  font-size: 24pt;
+}
+
+h1{
+	font-size: 2em;
+	color: #FC60C5;
+	text-align: center;	
+}
+
+input[type='text'] {
+	font-size: 1em;
+}
+
+.messages {
+	width: 90%;
+	background: rgba(200,0,0,0.5);
+	border-radius: 8px;
+	padding: 1em;
+	margin: 1em;
+	border: 2px solid #FC60C5;
+}
+
+.pink {
+	color: pink;
+}
